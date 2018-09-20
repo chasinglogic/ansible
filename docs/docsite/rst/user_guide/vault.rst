@@ -38,7 +38,7 @@ To create a new encrypted data file, run the following command:
 
    ansible-vault create foo.yml
 
-First you will be prompted for a password.  The password used with vault currently must be the same for all files you wish to use together at the same time.
+First you will be prompted for a password.  Before Ansible 2.4 the password used with vault currently must be the same for all files you wish to use together at the same time. See `Vault Ids and Multiple Vault Passwords`_ for information on using multiple Vault passwords with Ansible 2.4 and later.
 
 After providing a password, the tool will launch whatever editor you have defined with $EDITOR, and defaults to vi (before 2.1 the default was vim).  Once you are done with the editor session, the file will be saved as encrypted data.
 
